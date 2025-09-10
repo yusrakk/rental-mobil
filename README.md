@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rental Mobil 
 
-## Getting Started
+Aplikasi web untuk manajemen rental mobil dengan fitur input, edit, hapus, dan rekap data transaksi rental. Dibangun menggunakan Next.js, React, dan TailwindCSS. Aplikasi ini di didirikan Oleh Yusa Putra Rosdiana, Mahasiswa dari Universitas Siliwangi.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚗 Fitur Utama
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Input data rental mobil (nama penyewa, mobil, lama sewa, extra hour)
+- Tabel rekap transaksi rental
+- Edit dan hapus data rental
+- Program diskon otomatis berdasarkan lama sewa
+- Rekap total transaksi dan revenue
+- UI modern dan responsif
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚡ Instalasi & Menjalankan Aplikasi
 
-## Learn More
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/username/rental-mobil.git
+   cd rental-mobil
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # atau
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Jalankan server development:**
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Buka aplikasi di browser:**
+   [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Struktur Utama
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/page.js` : Halaman utama aplikasi
+- `src/components/` : Komponen UI (Form, Table, Modal, Footer, dll)
+- `src/hooks/` : Custom hooks untuk data dan modal
+- `src/models/` : Logika bisnis dan data mobil/program
+- `src/app/api/rental/route.js` : API untuk CRUD data rental
+
+---
+
+## 🎯 Kegunaan
+
+Aplikasi ini cocok untuk:
+- Usaha rental mobil skala kecil/menengah
+- Admin rental yang ingin rekap transaksi harian
+- Simulasi perhitungan biaya rental dan diskon otomatis
+- Monitoring pendapatan dan statistik rental
+
+---
+
+## 📚 Dokumentasi & Pengembangan
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+
+---
+
+## ✨ Kontribusi
+
+Pull request dan issue
