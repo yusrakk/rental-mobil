@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BiayaRental {
+  id             Int       @id @default(autoincrement())
+  namaPenyewa    String    @db.VarChar(100)
+  namaMobil      String    @db.VarChar(50)
+  program        String    @db.VarChar(50)
+  biayaPerHari   Decimal   @db.Decimal(10, 2)
+  lamaSewa       Int
+  extraHour      Int       @default(0)
+  biayaRental    Decimal   @db.Decimal(12, 2)
+  detailBiayaRental String @db.Text @default("") // Kolom baru dengan default value
+  totalBiaya     Decimal   @db.Decimal(12, 2)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@map("t_biaya_rental")
+}
