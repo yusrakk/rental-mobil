@@ -19,7 +19,7 @@ Aplikasi web untuk manajemen rental mobil dengan fitur input, edit, hapus, dan r
 
 1. **Clone repository:**
    ```bash
-   git clone https://github.com/username/rental-mobil.git
+   git clone https://github.com/yusrakk/rental-mobil.git
    cd rental-mobil
    ```
 
